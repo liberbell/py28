@@ -10,3 +10,6 @@ print(q.queue)
 
 print(q.empty())
 print(q.queue)
+
+while not q.empty():
+    print(q.get())
