@@ -1,4 +1,5 @@
 import queue
+import time
 
 q = queue.Queue()
 print(q.queue)
@@ -21,6 +22,16 @@ q = queue.LifoQueue()
 
 for i in range(7):
     q.put(i)
+
+while not q.empty():
+    print(q.get())
+
+q = queue.PriorityQueue()
+q.put(5)
+q.put(4)
+q.put(1)
+q.put(3)
+q.put(2)
 
 while not q.empty():
     print(q.get())
