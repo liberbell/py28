@@ -50,3 +50,11 @@ print(q.empty())
 counter = 1
 more_to_come = True
 
+class Producer(threading.Thread):
+    def __init__(self, queue):
+        threading.Thread.__init__(self)
+        self.queue = queue
+
+    def run(self):
+        global counter
+        global more_to_come
