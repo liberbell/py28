@@ -41,3 +41,5 @@ print("\n")
 q = queue.Queue()
 q.put(6)
 print(q.get())
+
+print(q.empty())
