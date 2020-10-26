@@ -7,3 +7,6 @@ for i in range(7):
     q.put(i)
 
 print(q.queue)
+
+print(q.empty())
+print(q.queue)
