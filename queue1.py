@@ -1,5 +1,7 @@
 import queue
 import time
+import threading
+import random
 
 q = queue.Queue()
 print(q.queue)
@@ -43,7 +45,7 @@ q.put(6)
 print(q.get())
 
 print(q.empty())
-print(q.get())
+# print(q.get())
 
 counter = 1
 more_to_come = True
