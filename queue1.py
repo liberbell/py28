@@ -36,3 +36,8 @@ q.put(2)
 
 while not q.empty():
     print(q.get())
+
+print("\n")
+q = queue.Queue()
+q.put(6)
+print(q.get())
