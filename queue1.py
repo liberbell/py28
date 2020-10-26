@@ -43,3 +43,8 @@ q.put(6)
 print(q.get())
 
 print(q.empty())
+print(q.get())
+
+counter = 1
+more_to_come = True
+
