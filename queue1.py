@@ -26,6 +26,7 @@ for i in range(7):
 while not q.empty():
     print(q.get())
 
+print("\n")
 q = queue.PriorityQueue()
 q.put(5)
 q.put(4)
