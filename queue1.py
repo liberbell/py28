@@ -58,3 +58,14 @@ class Producer(threading.Thread):
     def run(self):
         global counter
         global more_to_come
+
+        for i in range(5):
+            time.sleep(random.randrange(2, 5))
+            item = "New item #" + str(counter)
+
+            self.queue.put(item)
+            counter += 1
+
+            print("\nProduced: ", item)
+
+        more_to_come = False
