@@ -13,3 +13,5 @@ print(q.queue)
 
 while not q.empty():
     print(q.get())
+
+print(q.queue)
