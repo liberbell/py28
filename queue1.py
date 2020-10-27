@@ -82,4 +82,12 @@ class Consumer(threading.Thread):
             time.sleep(random.random())
             print(threading.current_thread().getName(), " popped: ", item)
 
-        print(threading.current_thread().getName(), "existing...")
+        print(threading.current_thread().getName(), " existing...")
+
+q = queue.Queue()
+
+Producer_thread = Producer(q)
+Consumer_thread = Consumer(q)
+
+Producer_thread.start()
+Consumer_thread.start()
