@@ -78,7 +78,7 @@ class Consumer(threading.Thread):
     def run(self):
 
         while(more_to_come):
-            item = self.queue.get(Timeout=10)
+            item = self.queue.get(timeout=10)
             time.sleep(random.random())
             print(threading.current_thread().getName(), " popped: ", item)
 
