@@ -69,3 +69,13 @@ class Producer(threading.Thread):
             print("\nProduced: ", item)
 
         more_to_come = False
+
+class Consumer(threading.Thread):
+    def __init__(self, queue):
+        threading.Thread.__init__(self)
+        self.queue = queue
+
+    def run(self):
+
+        while(more_to_come):
+            item = self.queue.get(Timeout=10)
