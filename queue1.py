@@ -91,3 +91,6 @@ Consumer_thread = Consumer(q)
 
 Producer_thread.start()
 Consumer_thread.start()
+
+print(Producer_thread.join())
+print(Consumer_thread.join())
