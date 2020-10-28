@@ -44,7 +44,7 @@ def square(number):
     process_name = current_process().name
 
     print("Process ID is %s and name is %s " %(process_id, process_name))
-    print("The number %d squares to %d \n" %(numbers, result))
+    print("The number %d squares to %d \n" %(number, result))
 
 start_time = time.time()
 for i, number in enumerate(numbers):
