@@ -8,7 +8,7 @@ from multiprocessing import Process, current_process
 #     result = number * number
 #     print("The number %d squares to %d " %(number, result))
 
-def square():
+def square(number):
     time.sleep(1)
     result = number * number
     process_id = os.getpid()
