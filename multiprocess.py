@@ -29,3 +29,6 @@ def square(number):
 start_time = time.time()
 for i, number in enumerate(numbers):
     process = Process(target=square, args=(number, ))
+    process.start()
+
+process.join()
