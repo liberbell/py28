@@ -11,3 +11,5 @@ start_time = time.time()
 
 for number in numbers:
     square(number)
+    
+end_time = time.time()
