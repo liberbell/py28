@@ -35,3 +35,13 @@ process.join()
 end_time = time.time()
 
 print(end_time - start_time)
+
+def square(number):
+    time.sleep(1)
+    result = number * number
+
+    process_id = current_process().pid
+    process_name = current_process().name
+
+    print("Process ID is %s and name is %s ", %(process_id, process_name))
+    
