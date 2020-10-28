@@ -7,4 +7,4 @@ def square(numbers):
 
 def cube(numbers):
     for n in numbers:
-        print("Cube of %d is %")
+        print("Cube of %d is %d" %(n, n * n * n))
