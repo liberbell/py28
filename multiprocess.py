@@ -26,3 +26,6 @@ def square(number):
 
     print("The number %d squares to %d " %(number, result ))
 
+start_time = time.time()
+for i, number in enumerate(numbers):
+    process = Process(target=square, args=(number, ))
