@@ -18,23 +18,23 @@ numbers = [1, 2, 3, 4]
 
 # print(end_time - start_time)
 
-def square(number):
-    time.sleep(1)
-    result = number * number
-    process_id = os.getpid()
-    print("Process ID: ", process_id)
+# def square(number):
+#     time.sleep(1)
+#     result = number * number
+#     process_id = os.getpid()
+#     print("Process ID: ", process_id)
 
-    print("The number %d squares to %d " %(number, result ))
+#     print("The number %d squares to %d " %(number, result ))
 
-start_time = time.time()
-for i, number in enumerate(numbers):
-    process = Process(target=square, args=(number, ))
-    process.start()
+# start_time = time.time()
+# for i, number in enumerate(numbers):
+#     process = Process(target=square, args=(number, ))
+#     process.start()
 
-process.join()
-end_time = time.time()
+# process.join()
+# end_time = time.time()
 
-print(end_time - start_time)
+# print(end_time - start_time)
 
 def square(number):
     time.sleep(1)
