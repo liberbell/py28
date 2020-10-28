@@ -8,7 +8,7 @@ from multiprocessing import Process, current_process
 #     result = number * number
 #     print("The number %d squares to %d " %(number, result))
 
-# numbers = [1, 2, 3, 4]
+numbers = [1, 2, 3, 4]
 # start_time = time.time()
 
 # for number in numbers:
@@ -32,3 +32,6 @@ for i, number in enumerate(numbers):
     process.start()
 
 process.join()
+end_time = time.time()
+
+print(end_time - start_time)
