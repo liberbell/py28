@@ -18,7 +18,7 @@ numbers = [1, 2, 3, 4]
 
 # print(end_time - start_time)
 
-def square(number):
+def square(number):%
     time.sleep(1)
     result = number * number
     process_id = os.getpid()
@@ -43,5 +43,5 @@ def square(number):
     process_id = current_process().pid
     process_name = current_process().name
 
-    print("Process ID is %s and name is %s ", %(process_id, process_name))
-    
+    print("Process ID is %s and name is %s " %(process_id, process_name))
+    print("The number %d squares to %d \n" %(numbers, result))
