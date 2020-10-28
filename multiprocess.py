@@ -1,4 +1,6 @@
 import time
+import os
+from multiprocessing import Process, current_process
 
 def square(number):
 
