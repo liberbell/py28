@@ -13,3 +13,9 @@ num_list = [2, 3, 8]
 
 p1 = multiprocessing.Process(target=square, args=(num_list, ))
 p2 = multiprocessing.Process(target=cube, args=(num_list, ))
+
+p1.start()
+p2.start()
+
+p1.join()
+p2.join()
