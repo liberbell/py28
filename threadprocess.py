@@ -45,3 +45,4 @@ def square(numbers):
 
     for n in numbers:
         print("Square of %d is %d " %(n, n * n))
+        square_result.append(n * n)
