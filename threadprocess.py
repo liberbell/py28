@@ -37,3 +37,4 @@ p1.start()
 p1.join()
 
 print("\nResult: ", square_result)
+print("\nCompleted.")
