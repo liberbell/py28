@@ -48,3 +48,8 @@ def square(numbers):
         square_result.append(n * n)
     
     print("\nWithin the process. Result: ", square_result)
+
+p1 = multiprocessing.Process(target=square, args=(num_list, ))
+
+p1.start()
+p1.join()
