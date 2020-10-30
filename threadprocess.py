@@ -53,3 +53,5 @@ p1 = multiprocessing.Process(target=square, args=(num_list, ))
 
 p1.start()
 p1.join()
+
+print("\nCompleted.")
