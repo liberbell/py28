@@ -9,7 +9,7 @@ import multiprocessing
 #     for n in numbers:
 #         print("Cube of %d is %d" %(n, n * n * n))
 
-# num_list = [2, 3, 8]
+num_list = [2, 3, 8]
 
 # p1 = multiprocessing.Process(target=square, args=(num_list, ))
 # p2 = multiprocessing.Process(target=cube, args=(num_list, ))
@@ -30,3 +30,10 @@ def square(numbers):
     for n in numbers:
         print("Square of %d is %d " %(n, n * n))
         square_result.append(n * n)
+
+p1 = multiprocessing.Process(target=square, args=(num_list, ))
+
+p1.start()
+p1.join()
+
+print("\nResult: ", square_result)
