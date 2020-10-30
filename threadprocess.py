@@ -42,3 +42,6 @@ square_result = []
 def square(numbers):
 
     global square_result
+
+    for n in numbers:
+        print("Square of %d is %d " %(n, n * n))
