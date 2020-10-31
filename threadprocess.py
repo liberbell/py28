@@ -57,7 +57,7 @@ p1.start()
 p1.join()
 end_time = time.time()
 
-print("Completed.")
+print("Multiprocess Completed.")
 print(end_time - start_time)
 
 start_time = time.time()
@@ -76,5 +76,5 @@ p1.join()
 end_time = time.time()
 
 print("\nResult: ", square_result)
-print("Completed.")
+print("Thread Completed.")
 print(end_time - start_time)
