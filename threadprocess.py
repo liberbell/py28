@@ -40,6 +40,7 @@ square_result = []
 # print("\nResult: ", square_result)
 # print("\nCompleted.")
 
+start_time = time.time()
 def square1(numbers):
 
     global square_result
@@ -54,9 +55,12 @@ p1 = multiprocessing.Process(target=square1, args=(num_list, ))
 
 p1.start()
 p1.join()
+end_time = time.time()
 
 print("Completed.")
+print(end_time - start_time)
 
+start_time = time.time()
 def square2(numbers):
 
     global square_result
@@ -69,6 +73,8 @@ p1 = threading.Thread(target=square2, args=(num_list, ))
 
 p1.start()
 p1.join()
+end_time = time.time()
 
 print("\nResult: ", square_result)
 print("Completed.")
+print(end_time - start_time)
