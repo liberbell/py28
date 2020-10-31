@@ -63,3 +63,12 @@ def square(numbers):
 
     for n in numbers:
         print("square of %d is %d" %(n, n * n))
+        square_result.append(n * n)
+
+p1 = threading.Thread(target=square, args=(num_list, ))
+
+p1.start()
+p1.join()
+
+print("\nResult: ", square_result)
+print("Completed.")
