@@ -10,7 +10,7 @@ import threading
 #     for n in numbers:
 #         print("Cube of %d is %d" %(n, n * n * n))
 
-num_list = [2, 3, 8, 16, 256, 1024]
+num_list = [2, 3, 8, 16, 256, 1024, 4096]
 
 # p1 = multiprocessing.Process(target=square, args=(num_list, ))
 # p2 = multiprocessing.Process(target=cube, args=(num_list, ))
