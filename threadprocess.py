@@ -40,24 +40,24 @@ square_result = []
 # print("\nResult: ", square_result)
 # print("\nCompleted.")
 
-# def square(numbers):
+def square1(numbers):
 
-#     global square_result
+    global square_result
 
-#     for n in numbers:
-#         print("Square of %d is %d " %(n, n * n))
-#         square_result.append(n * n)
+    for n in numbers:
+        print("Square of %d is %d " %(n, n * n))
+        square_result.append(n * n)
     
-#     print("\nWithin the process. Result: ", square_result)
+    print("\nWithin the process. Result: ", square_result)
 
-# p1 = multiprocessing.Process(target=square, args=(num_list, ))
+p1 = multiprocessing.Process(target=square1, args=(num_list, ))
 
-# p1.start()
-# p1.join()
+p1.start()
+p1.join()
 
-# print("Completed.")
+print("Completed.")
 
-def square(numbers):
+def square2(numbers):
 
     global square_result
 
@@ -65,7 +65,7 @@ def square(numbers):
         print("square of %d is %d" %(n, n * n))
         square_result.append(n * n)
 
-p1 = threading.Thread(target=square, args=(num_list, ))
+p1 = threading.Thread(target=square2, args=(num_list, ))
 
 p1.start()
 p1.join()
