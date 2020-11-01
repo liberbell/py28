@@ -24,3 +24,5 @@ def square_list(numlist, result, square_sum):
         result[idx] = num * num
 
     square_sum.value = sum(result)
+
+result = multiprocessing.Array("i", 4)
