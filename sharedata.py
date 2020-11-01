@@ -5,7 +5,7 @@ result = []
 def square(num_list):
     global result
 
-    for n in num_list:
+    for num in num_list:
         result.append(num * num)
 
         print("Child process result: ", result)
