@@ -18,6 +18,7 @@ p1.start()
 p1.join()
 
 print("Main process result:", result)
+print("--------")
 
 def square_list(numlist, result, square_sum):
     for idx, num in enumerate(numlist):
@@ -26,3 +27,4 @@ def square_list(numlist, result, square_sum):
     square_sum.value = sum(result)
 
 result = multiprocessing.Array("i", 4)
+square_sum = multiprocessing.Value("i")
