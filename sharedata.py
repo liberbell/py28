@@ -18,3 +18,7 @@ p1.start()
 p1.join()
 
 print("Main process result:", result)
+
+def square_list(numlist, result, square_sum):
+    for idx, num in enumerate(numlist):
+        result[idx] = num * num
