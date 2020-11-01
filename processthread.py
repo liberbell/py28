@@ -55,3 +55,10 @@ square_result = []
 # p1.join()
 
 # print("\nComplited")
+
+def square(numbers):
+    global square_result
+
+    for n in numbers:
+        print("Square of %d is %d" %(n, n * n))
+        square_result.append(n * n)
