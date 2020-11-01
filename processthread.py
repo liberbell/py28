@@ -1,5 +1,6 @@
 import time
 import multiprocessing
+import threading
 
 # def square(numbers):
 #     for n in numbers:
@@ -39,18 +40,18 @@ square_result = []
 # print("\nReuslt: ", square_result)
 # print("\nComplited")
 
-def square(numbers):
-    global square_result
+# def square(numbers):
+#     global square_result
 
-    for n in numbers:
-        print("Square of %d is %d" %(n, n * n))
-        square_result.append(n * n)
+#     for n in numbers:
+#         print("Square of %d is %d" %(n, n * n))
+#         square_result.append(n * n)
 
-    print("\nWithin the process. Result:", square_result)
+#     print("\nWithin the process. Result:", square_result)
 
-p1 = multiprocessing.Process(target=square, args=(num_list, ))
+# p1 = multiprocessing.Process(target=square, args=(num_list, ))
 
-p1.start()
-p1.join()
+# p1.start()
+# p1.join()
 
-print("\nComplited")
+# print("\nComplited")
