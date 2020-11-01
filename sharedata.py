@@ -28,3 +28,8 @@ def square_list(numlist, result, square_sum):
 
 result = multiprocessing.Array("i", 4)
 square_sum = multiprocessing.Value("i")
+
+p = multiprocessing.Process(target=square_list, args=(num_list, result, square_sum))
+
+p.start()
+p.join()
