@@ -33,3 +33,5 @@ p = multiprocessing.Process(target=square_list, args=(num_list, result, square_s
 
 p.start()
 p.join()
+
+print(list(result))
