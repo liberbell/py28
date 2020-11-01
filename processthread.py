@@ -68,4 +68,5 @@ p1 = threading.Thread(target=square, args=(num_list, ))
 p1.start()
 p1.join()
 
+print("\nReuslt: ", square_result)
 print("\nComplited")
