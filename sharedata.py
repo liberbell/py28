@@ -10,3 +10,9 @@ def square(num_list):
 
         print("Child process result: ", result)
 
+num_list = [1, 2, 3, 4]
+
+p1 = multiprocessing.Process(target=square, args=(num_list, ))
+
+p1.start()
+p1.join()
