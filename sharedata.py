@@ -40,3 +40,8 @@ print(square_sum.value)
 def get_data(data_list):
     for data in data_list:
         print("Name: %d \nScore: %d \n" %(data[0], data[1]))
+
+def append_data(new_data, data_list):
+    data_list.append(new_data)
+    print("New data appended!\n")
+
