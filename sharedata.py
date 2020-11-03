@@ -36,3 +36,7 @@ p.join()
 
 print(list(result))
 print(square_sum.value)
+
+def get_data(data_list):
+    for data in data_list:
+        print("Name: %d \nScore: %d \n" %(data[0], data[1]))
