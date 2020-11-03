@@ -45,3 +45,5 @@ def append_data(new_data, data_list):
     data_list.append(new_data)
     print("New data appended!\n")
 
+database = ([("Maura", 70), ("Alexis", 79), ("Pete", 96)])
+new_data = ("Leroy", 87)
