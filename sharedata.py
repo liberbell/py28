@@ -52,7 +52,7 @@ p1 = multiprocessing.Process(target=append_data, args=(new_data, database))
 p2 = multiprocessing.Process(target=get_data, args=(database, ))
 
 p1.start()
-p2.start()
-
 p1.join()
+
+p2.start()
 p2.join()
