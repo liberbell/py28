@@ -72,3 +72,5 @@ with multiprocessing.Manager() as manager:
 
     p1.join()
     p2.join()
+
+    print("Data available to the Manager: ", database)
