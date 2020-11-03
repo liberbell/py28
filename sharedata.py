@@ -39,7 +39,7 @@ print(square_sum.value)
 
 def get_data(data_list):
     for data in data_list:
-        print("Name: %d \nScore: %d \n" %(data[0], data[1]))
+        print("Name: %s \nScore: %d \n" %(data[0], data[1]))
 
 def append_data(new_data, data_list):
     data_list.append(new_data)
@@ -53,3 +53,6 @@ p2 = multiprocessing.Process(target=get_data, args=(database, ))
 
 p1.start()
 p2.start()
+
+p1.join()
+p2.join()
