@@ -47,3 +47,9 @@ def append_data(new_data, data_list):
 
 database = ([("Maura", 70), ("Alexis", 79), ("Pete", 96)])
 new_data = ("Leroy", 87)
+
+p1 = multiprocessing.Process(target=append_data, args=(new_data, database))
+p2 = multiprocessing.Process(target=get_data, args=(database, ))
+
+p1.start()
+p2.start()
