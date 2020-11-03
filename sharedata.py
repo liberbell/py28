@@ -58,3 +58,8 @@ print(database)
 
 p2.start()
 p2.join()
+
+with multiprocessing.Manager() as manager:
+
+    database = (manager.list([("Maura", 70), ("Alexis", 79), ("Pete", 96)]))
+    new_data = ("Leroy", 87)
