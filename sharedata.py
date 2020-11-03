@@ -35,3 +35,4 @@ p.start()
 p.join()
 
 print(list(result))
+print(square_sum.value)
