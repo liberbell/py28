@@ -39,4 +39,8 @@ def withdraw_without_lock(balance, amount):
     return balance
 
 balance = multiprocessing.Value("i", 600)
-print(balance)
+d = multiprocessing.Process(target=deposit_without_lock, args=(balance, 5))
+w = multiprocessing.Process(target=withdraw_without_lock, args=(balance, 5))
+
+d.start()
+w.start()
