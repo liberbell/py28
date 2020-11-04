@@ -49,3 +49,7 @@ d.join()
 w.join()
 
 print("Final balance: ", balance.value)
+
+def deposite_with_lock(balance, amount, lock):
+    for i in range(100):
+        time.sleep(0.01)
