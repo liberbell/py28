@@ -44,3 +44,8 @@ w = multiprocessing.Process(target=withdraw_without_lock, args=(balance, 5))
 
 d.start()
 w.start()
+
+d.join()
+w.join()
+
+print("Final balance: ", balance.value)
