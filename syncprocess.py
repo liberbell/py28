@@ -37,3 +37,6 @@ def withdraw_without_lock(balance, amount):
         balance.value -= amount
     
     return balance
+
+balance = multiprocessing.Value("i", 600)
+print(balance)
