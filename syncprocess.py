@@ -57,3 +57,7 @@ def deposite_with_lock(balance, amount, lock):
         lock.acquire()
         balance.value += amount
         lock.release()
+
+def withdraw_with_lock(balance, amount, lock):
+    for i in range(100):
+        time.sleep(0.01)
