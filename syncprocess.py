@@ -29,4 +29,11 @@ def deposit_without_lock(balance, amount):
         time.sleep(0.01)
         balance.value += amount
 
-    return  balance
+    return  
+    
+def withdraw_without_lock(balance, amount):
+    for i in range(100):
+        time.sleep(0.01)
+        balance.value -= amount
+    
+    return balance
