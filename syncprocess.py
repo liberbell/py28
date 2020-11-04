@@ -17,3 +17,5 @@ def withdraw_without_mp(balance, amount):
 
 balance = 600
 print(balance)
+
+print(deposit_with_mp(balance))
