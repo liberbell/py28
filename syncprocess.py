@@ -19,3 +19,6 @@ balance = 600
 print(balance)
 
 print(deposit_with_mp(balance, 5))
+
+balance = withdraw_without_mp(balance, 5)
+print(balance)
