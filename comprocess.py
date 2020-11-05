@@ -28,3 +28,6 @@ def sender(connection, greets):
 def recipient(connection):
     while True:
         greet = connection.recv()
+        if greet == "STOP:
+            break
+        print(greet)
