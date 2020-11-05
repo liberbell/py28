@@ -8,3 +8,5 @@ def is_even(numbers, q):
 def print_numbers(q):
     while not q.empty():
         print(q.get())
+
+q = multiprocessing.Queue()
