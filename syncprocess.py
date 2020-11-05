@@ -65,3 +65,6 @@ def withdraw_with_lock(balance, amount, lock):
         lock.acquire()
         balance.value -= amount
         lock.release()
+
+balance = multiprocessing("i", 600)
+lock = multiprocessing.Lock()
