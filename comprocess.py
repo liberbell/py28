@@ -19,3 +19,7 @@ p2.start()
 
 p1.join()
 p2.join()
+
+def sender(connection, greets):
+    for greet in greets:
+        connection.send(greet)
