@@ -72,3 +72,8 @@ lock = multiprocessing.Lock()
 d = multiprocessing.Process(target=deposit_with_lock, args=(balance, 5, lock))
 w = multiprocessing.Process(target=withdraw_with_lock, args=(balance, 5, lock))
 
+d.start()
+w.start()
+
+d.join()
+w.join()
