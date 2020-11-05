@@ -32,3 +32,15 @@ def recipient(connection):
             break
         print(greet)
 
+msgs = ["Hello", "Hola", "Guten tag", "STOP"]
+
+sending_pipe, recieving_pipe = multiprocessing.Pipe()
+
+p1 = multiprocessing.Process(target=sender, args=(sending_pipe, msgs))
+p2 = multiprocessing.Process(target=recipient, args=(recieving_pipe, ))
+
+p1.start()
+p2.start()
+
+p1.join()
+p2.join()
