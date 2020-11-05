@@ -12,3 +12,4 @@ def print_numbers(q):
 q = multiprocessing.Queue()
 
 p1 = multiprocessing.Process(target=is_even, args=(range(10), q))
+p2 = multiprocessing.Process(target=print_numbers, args=(q, ))
