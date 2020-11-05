@@ -77,3 +77,5 @@ w.start()
 
 d.join()
 w.join()
+
+print("Final balance: ", balance.value)
