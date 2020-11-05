@@ -23,3 +23,8 @@ p2.join()
 def sender(connection, greets):
     for greet in greets:
         connection.send(greet)
+    connection.close()
+
+def recipient(connection):
+    while True:
+        greet = connection.recv()
