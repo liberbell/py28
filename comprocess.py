@@ -9,16 +9,16 @@ def print_numbers(q):
     while not q.empty():
         print(q.get())
 
-q = multiprocessing.Queue()
+# q = multiprocessing.Queue()
 
-p1 = multiprocessing.Process(target=is_even, args=(range(10), q))
-p2 = multiprocessing.Process(target=print_numbers, args=(q, ))
+# p1 = multiprocessing.Process(target=is_even, args=(range(10), q))
+# p2 = multiprocessing.Process(target=print_numbers, args=(q, ))
 
-p1.start()
-p2.start()
+# p1.start()
+# p2.start()
 
-p1.join()
-p2.join()
+# p1.join()
+# p2.join()
 
 def sender(connection, greets):
     for greet in greets:
@@ -31,3 +31,4 @@ def recipient(connection):
         if greet == "STOP":
             break
         print(greet)
+
